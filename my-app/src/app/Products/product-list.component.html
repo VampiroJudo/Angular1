@@ -13,7 +13,7 @@
 			<h3>Filtered by: </h3>
 		</div>
 	</div>
-	<div class='table-resposive'>
+	<div class='table-responsive'>
 		<table class='table'
 				*ngIf='products && products.length'>
 			<thread>
@@ -31,7 +31,13 @@
 				</tr>
 			</thread>
 			<tbody>
-				
+				<tr *ngFor='let product of products'>
+					<td>{{product.productName}}</td>
+					<td>{{product.productCode}}</td>
+					<td>{{product.releaseDate}}</td>
+					<td>{{product.productPrice}}</td>
+					<td>{{product.starRating}}</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
