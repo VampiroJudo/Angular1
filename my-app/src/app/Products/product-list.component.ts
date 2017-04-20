@@ -37,4 +37,6 @@ export class ProductListComponent {
 toggleImage(): void {
 	this.showImage = !this.showImage;
 	}
+
+	
 }
