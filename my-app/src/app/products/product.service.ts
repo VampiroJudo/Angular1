@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 
 
 import { IProduct } from './product';
 
@@ -7,7 +8,7 @@ export class ProductService {
 
 	getProducts(): IProduct[] =  {
 		return [
-    
+    [
     {
         "productId": 1,
         "productName": "Leaf Rake",
@@ -61,4 +62,3 @@ export class ProductService {
 ]
 };
 
-}
