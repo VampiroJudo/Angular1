@@ -5,7 +5,7 @@ import { IProduct } from './product';
 @Injectable()
 export class ProductService {
 
-	products: IProduct[] =  {
+	getProducts(): IProduct[] =  {
 		return [
     {
         "productId": 1,
