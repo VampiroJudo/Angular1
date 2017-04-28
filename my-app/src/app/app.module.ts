@@ -13,7 +13,7 @@ import { StarComponent } from './shared/star.component';
   imports: [ 
   	BrowserModule,
   	FormsModule,
-    HttpModule
+    HttpModule,
     RouterModule.forRoot([
       { path: 'products', component: ProductListComponent },
       { path: 'product/:id', component: ProductDetailComponent },
